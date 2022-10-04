@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sign Up page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="css/signup.css">
+    </head>
+<body>
+
+  <div class="container">
+  <div class="lside">
+      <h2>Registration</h2>
+   <form class="form" action="signup.jsp">
+      
+      <input type="text" placeholder="First Name" name="fname"  class="box flex-item" required>
+
+    
+      <input type="text" placeholder="Last Name" name="lname"  class="box flex-item" required>
+
+     
+      <input type="text" placeholder="Enter Address" name="addr"  class="box flex-item" required>
+      
+
+     
+      <input type="text" placeholder="Enter Email" name="email"  class="box flex-item" required>
+
+
+    
+      <input type="text" placeholder="mobile no" name="mobno"  class="box flex-item" required>
+      
+      
+      <input type="text" placeholder="Enter Email" name="email"  class="box flex-item" required>
+       
+      
+      <input type="Password" placeholder="Enter password" name="pswd"  class="box flex-item" required><br>
+      
+      <label for="role" class="role1"><b>Select User Type</b></label>
+      <select id="role" name="role" class="box flex-item" required>
+          <option value="ps">Passenger</option>
+          <option value="sg1">G1 Staff</option>
+          <option value="sg2">G2 Staff</option>
+          <option value="admin">Admin</option>
+       </select> 
+      <button id="submit" type="submit" class="signupbtn flex-item box">Create Account</button>
+      <p><b>Already have an Account?  <a href="login.html" style="color:white"><u>Login</u></a></b></p>
+      </form>
+
+     </div> 
+      <div class="rside">
+          <img src="images/bro.png">
+         
+      </div>
+ </div>
+</body>
+</html>

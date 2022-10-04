@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 Oct, 2022, 2:58:26 PM
+    Author     : User
+*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display:flex;
+    padding: auto;
+    width:800px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.lside {
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    align-items:stretch;
+    background-color:#407BFF;
+    justify-content: center;
+    border-radius: 20px;
+    
+   
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    background-color: #407BFF;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.flex-item {
+  width: calc(33.33333% - 40px);
+  margin: 10px;
+}
+
+.lside h2{
+    font-size: 3rem;
+    font-family: Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+    margin: 40px;
+}
+
+.box{
+   padding: 12px; 
+   width:90%;
+   margin:15px;
+   border:1px solid black;
+   outline: none;
+   border-radius: 20px;
+}
+
+#submit{
+   padding: 15px 30px;
+   width:90%;
+   margin-top: 70px;
+   background-color:  black;
+   color: white;
+   border: none;
+   outline: none;
+   border-radius: 20px;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: #0F2996;
+}
+
+.form a{
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+.form a:hover{
+    color: orange;
+}
+
+.rside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    
+}
+.rside img{
+    width: 450px;
+    height: 450px;
+}
+
+role1{
+  padding-left: 30px;
+}

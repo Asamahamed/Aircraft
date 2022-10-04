@@ -6,11 +6,33 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Login page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="css/login.css">
     </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<body>
+
+  <div class="container">
+  <div class="lside">
+      <h2>Login</h2>
+   <form class="form" action="signup.jsp">
+       
+      <input type="text" placeholder="Enter Email" name="email"  class="box flex-item" required>
+       
+      
+      <input type="Password" placeholder="Enter password" name="pswd"  class="box flex-item" required>
+      
+      <button id="submit" type="submit" class="signupbtn flex-item box">Login</button>
+      <p><b>Don't you have an Account?  <a href="signup.html" style="color:white"><u>Sign up</u></a></b></p>
+      
+   </form>
+
+     </div> 
+      <div class="rside">
+          <img src="images/pana.png">
+         
+      </div>
+ </div>
+</body>
 </html>
