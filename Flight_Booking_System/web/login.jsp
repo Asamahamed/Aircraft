@@ -26,6 +26,7 @@ window.location.href="passenger.html";
 
 <%} else if (dbConnection.rslt2.next()) {%>
 <script>
+confirm("Welcome Admin ! Have a nice day");
 
 window.location.href="admin.jsp";
 </script>
