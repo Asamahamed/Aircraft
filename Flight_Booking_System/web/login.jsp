@@ -10,10 +10,10 @@ String pswd = request.getParameter("pswd");
 String role = request.getParameter("role");
 
 dbConnection.DConnect();
-String selectquery1 = "select * from signup where uname='" + uname + "' and pswd='" + pswd + "' and role='ps'" ;
-String selectquery2 = "select * from signup where uname='" + uname + "' and pswd='" + pswd + "' and role='admin'" ;
-String selectquery3 = "select * from signup where uname='" + uname + "' and pswd='" + pswd + "' and role='sg1'" ;
-String selectquery4 = "select * from signup where uname='" + uname + "' and pswd='" + pswd + "' and role='sg2'" ;
+String selectquery1 = "select * from users where uname='" + uname + "' and pswd='" + pswd + "' and role='ps'" ;
+String selectquery2 = "select * from users where uname='" + uname + "' and pswd='" + pswd + "' and role='admin'" ;
+String selectquery3 = "select * from users where uname='" + uname + "' and pswd='" + pswd + "' and role='sg1'" ;
+String selectquery4 = "select * from users where uname='" + uname + "' and pswd='" + pswd + "' and role='sg2'" ;
 dbConnection.rslt1 = dbConnection.stmt1.executeQuery(selectquery1);
 dbConnection.rslt2 = dbConnection.stmt2.executeQuery(selectquery2);
 dbConnection.rslt3 = dbConnection.stmt3.executeQuery(selectquery3);
