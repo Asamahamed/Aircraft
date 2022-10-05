@@ -21,8 +21,7 @@ dbConnection.rslt4 = dbConnection.stmt4.executeQuery(selectquery4);
 if (dbConnection.rslt1.next()) {
 %>
 <script>
-alert("Welcome to pheonix Airline");
-window.location.href="home.html";
+window.location.href="passenger.html";
 </script>
 
 <%} else if (dbConnection.rslt2.next()) {%>
