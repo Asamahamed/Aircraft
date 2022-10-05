@@ -46,9 +46,9 @@ td {
   
             try{
           Class.forName("com.mysql.jdbc.Driver");
-           Connection con=DriverManager.getConnection("jdbc:mysql://localhost/aircraftdb","root","");
+           Connection con=DriverManager.getConnection("jdbc:mysql://localhost/flightdb","root","");
            Statement st=con.createStatement();
-           String str="select id,uname,email,role from user ";
+           String str="select id,uname,email,role from users ";
            ResultSet rs=st.executeQuery(str);
            while(rs.next())
            {
@@ -90,7 +90,7 @@ try
 {
 ResultSet rs =null;
 Class.forName("com.mysql.jdbc.Driver");
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost/aircraftdb","root","");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost/flightdb","root","");
 Statement stmt=con.createStatement();
 String sname=request.getParameter("name");
 String sgmail=request.getParameter("gmail");
@@ -121,27 +121,26 @@ out.println(e.getMessage());
 
         
 <style type=text/css> 
-    
-    
-    
+  
     body   
 { 
 
 height: 100px;  
-margin-top: 1px;  
+margin-top: 15px;  
 padding: 30px;  
 background-size: cover;  
 font-family: sans-serif;  
+background-color: #990099; 
 } 
     
  
 header {  
-background-color: orange;  
+background-color: blanchedalmond;  
 position: fixed;  
-left: 5px;  
+left: 15px;  
 right: 15px;  
-top: 5px;  
-height: 30px;  
+top: 10px;  
+height: 40px;  
 display: flex;  
 align-items: center;  
 box-shadow: 0 0 25px 0 black;  
@@ -150,11 +149,11 @@ header * {
 display: inline;  
 }  
 header li {  
-margin: 50px;  
+margin: 100px;  
 }  
 header li a {  
-color: green;  
-text-decoration: none;  
+color: black;  
+  text-decoration:peru;
 }  
 </style>   
 
@@ -165,17 +164,20 @@ text-decoration: none;
   
    
 <nav>  
-<ul>  
-<li>  
-<a href="#"> UserMonitor </a>  
-</li>  
- <li> 
-<a href="#"> Add Staff</a>  
-</li>  
-<li> 
-<a href="#">log out</a>  
-</li> 
-</ul>  
+
+    
+    <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="monitor.html">UserMonitor</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="signup.html">Add Staff</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="home.html">log out</a>
+  </li>
+  
+</ul>
 </nav>  
              </form>
 </header>  
@@ -209,17 +211,14 @@ text-decoration: none;
             </tr>
             
             <tr>
-            
-                 <td><label for="grade" class="grade">S_Grade</label>
-                <select id="grade" name="grade"  required>
                 
-                    <option value="sg1" >G1 Staff</option>
-                    <option value="sg2">G2 Staff</option>
+           <td>         
+             <select class="form-select" aria-label="Default select example">
+  <option selected>S_Grade</option>
+  <option value="sg1" >G1 Staff</option>
+  <option value="sg2">G2 Staff</option>  </td>
 
-                </select>
-        </td>
-                    
-             
+</select>
             </tr>
             <tr>
                 <td> <input type="submit" id="submit" value="Approved" name="submit" class="btn btn-info" >   </td>
@@ -239,4 +238,4 @@ text-decoration: none;
 
 </body>   
 </Html>  
-<!--Connection con=DriverManager.getConnection("jdbc:mysql://localhost/aircraftdb","root","");-->
+<!--Connection con=DriverManager.getConnection("jdbc:mysql://localhost/flightdb","root","");-->
