@@ -26,14 +26,13 @@ window.location.href="passenger.html";
 
 <%} else if (dbConnection.rslt2.next()) {%>
 <script>
-alert("welcome admin");
-window.location.href="admin.html";
+
+window.location.href="admin.jsp";
 </script>
 
 <%} else if (dbConnection.rslt3.next()) {%>
 <script>
-alert("welcome staff 1");
-window.location.href="staff1.html";
+window.location.href="g1staff.html";
 </script>
 
 <%} else if (dbConnection.rslt4.next()) {%>
