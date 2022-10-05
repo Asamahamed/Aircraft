@@ -34,10 +34,10 @@ td {
 <table >
             <tr>
              
-                <th>Staff Id</th>
-                <th>Staff name</th>
-                <th>Staff Gmail</th>
-                <th>Staff Role</th>
+                <th>Staff_Id</th>
+                <th>Staff_Name</th>
+                <th>Staff_Gmail</th>
+                <th>Staff_Role</th>
             </tr>
           
             
