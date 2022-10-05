@@ -37,8 +37,7 @@ window.location.href="g1staff.html";
 
 <%} else if (dbConnection.rslt4.next()) {%>
 <script>
-alert("welcome staff 2");
-window.location.href="staff2.html";
+window.location.href="g1staff.html";
 </script>
 
 
