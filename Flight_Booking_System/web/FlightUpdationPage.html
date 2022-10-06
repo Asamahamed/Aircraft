@@ -1,0 +1,112 @@
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Flight Updation page</title>
+
+<style>
+
+body 
+{
+font-family: Arial, Helvetica, sans-serif;
+background-color:#F5DEB3;
+}
+
+form
+{
+ border: 6px solid #E5E4E2;
+ border-style:outset;
+ background-color:white;
+ border-radius:5%;
+ height:100%
+ width:70%;
+}
+
+input[type=text],input[type=date],input[type=number],input[type=time] 
+{
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  float:center;
+  background-color:#FFFFCC;
+}
+
+button {
+  background-color:#FFA62F;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  text-decoration:none;
+}
+
+button:hover 
+{
+  opacity: 0.8;
+}
+
+.container
+{
+  padding: 16px;
+  text-align: center;
+}
+
+h2
+{
+  text-align:center;
+  color:black;
+  font-family: 'Dancing Script', cursive;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<h2>Flight Updation</h2>
+	
+	<form action="" method="post">
+	
+	<div class="container">
+	
+    <label for="fnumber"><b>Flight number</b></label>&nbsp;&nbsp;
+    <input type="text" placeholder="Enter FlightNumber" name="fname" required><br>
+	
+    <label for="date"><b>schedueld date</b></label>
+    <input type="date" placeholder="Enter Scheduled date" name="date" required><br>
+		
+	<label for="depplace"><b>Depature</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" placeholder="Enter DepatureAirport" name="depplace" required><br>
+	
+    <label for="destplace"><b>Destination</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" placeholder="Enter DestinationAirport" name="destplace" required><br>
+	
+	<label for="deptime"><b>Departure time</b></label>
+    <input type="time" placeholder="Enter DepatureTime" name="deptime" required><br>
+	
+    <label for="arrtime"><b>Arraival time</b></label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="time" placeholder="Enter ArrivalTime" name="arrtime" required><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<button type="submit"><b>Update details</b></button><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button type="submit" ><b>Exit</b></button>
+	
+</div>
+	
+</form>
+	
+</body>
+	
+</html>
+
+
