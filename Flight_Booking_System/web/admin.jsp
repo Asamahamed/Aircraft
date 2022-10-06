@@ -6,8 +6,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <Html>     
- 
-<h1>Pending Staff Details </h1>
+  <HEAD>
+               <link rel="stylesheet"  href="css/admindesh.css"> 
+     
+    </HEAD>
+
+    <body>
 
  <div>
 <%--table style --%>
@@ -31,7 +35,7 @@ td {
  <%-- ------------------------------------------------------------------------------ --%> 
  
  
-<table >
+<table class="table table-bordered table-striped table-condensed" align="bottem"  >
             <tr>
              
                 <th>Staff_Id</th>
@@ -77,7 +81,7 @@ td {
             %>
        
         
-           </table>
+          
         
          <%-- ------------------------------------------------------------------------------ --%>
     
@@ -119,73 +123,108 @@ out.println(e.getMessage());
         
         
 
-        
-<style type=text/css> 
-  
-    body   
-{ 
-
-height: 100px;  
-margin-top: 15px;  
-padding: 30px;  
-background-size: cover;  
-font-family: sans-serif;  
-background-color: #990099; 
-} 
-    
- 
-header {  
-background-color: blanchedalmond;  
-position: fixed;  
-left: 15px;  
-right: 15px;  
-top: 10px;  
-height: 40px;  
-display: flex;  
-align-items: center;  
-box-shadow: 0 0 25px 0 black;  
-}  
-header * {  
-display: inline;  
-}  
-header li {  
-margin: 100px;  
-}  
-header li a {  
-color: black;  
-  text-decoration:peru;
-}  
-</style>   
 
  <%-- ------------------------------------------------------------------------------ --%>
  
  
-<header>  
+ 
+
   
    
-<nav>  
+<nav>
+        
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Monitor Pesenger</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Add Staff</span>
+                </a></li>
+                
+                <li><a href="#">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">Share</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="signup.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
 
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>  
     
-    <ul class="nav justify-content-end">
-  <li class="nav-item">
-    <a class="nav-link active" href="monitor.html">UserMonitor</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="signup.html">Add Staff</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="home.html">log out</a>
-  </li>
-  
-</ul>
-</nav>  
-             </form>
-</header>  
-  
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            
+            <!--<img src="images/profile.jpg" alt="">-->
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                       
+                        <span class="text">Total Pesengers</span>
+                        <span class="number">501,200</span>
+                    </div>
+                    <div class="box box2">
+              
+                        <span class="text">Total Staff</span>
+                        <span class="number">20,120</span>
+                    </div>
+                    <div class="box box3">
+                    
+                        <span class="text">Total Shares</span>
+                        <span class="number">10000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Recent Activity</span>
+                </div>
+
+            
+            </div>
+        </div>
+    </section>
+
+           
+
  <%-- ------------------------------------------------------------------------------ --%>
  
  
-<form    method="POST">
+
     
     
     <table style="margin-top:1px; right:100px;" border="1" width="15" cellspacing="5">
@@ -228,11 +267,14 @@ color: black;
             
             </tr>
              </table>
-</form>
+
 
            
           
-
+        
+ <script src="js/admin.js">  
+    </script>
+   
    
 
 
