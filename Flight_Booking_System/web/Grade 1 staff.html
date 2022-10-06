@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <style>
+		body{
+    margin-top: 30px;
+    background-color: lightgray;
+}
+.main{
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topbar{
+    background-color: teal;
+    overflow: hidden;
+}
+.topbar a{
+    float: right;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+    font-size: 26px;
+}
+.sidebar{
+    background-color: #333;
+    color: white;
+    height: 70%;
+	width:15%;
+    padding-bottom: -50%;
+}
+.sidebar a{
+    margin-left: 10px;
+    display: block;
+    color: lightsalmon;
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    background-color: whitesmoke;
+	width:82.5%;
+	float:right;
+	top:-490px;
+    padding-left: 10px;
+    padding-bottom: 70px;
+}
+a:hover{
+    color:wheat;
+}
+		</style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="main">
+                <div class="topbar">
+                    <a href="">Home</a>
+                    <a href="">Sign-out</a>
+                </div>
+                <div class="row">
+                    <div class="column 1">
+                        <div class="card text-center sidebar">
+                            <div class="card-body">
+                                <img src="image.png"  width="170">
+                                <div class="mt-3">
+                                    <h3>Grade 1 Staff</h3>
+                                    <a href="">Home</a>
+                                    <a href="">Edit Profile</a>
+                                    <a href="">Edit User Details</a>
+                                    <a href="">Flight Updation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mt-1">
+                        <div class="card mb-3 content">
+                            <h1 class="m-3 pt-3">Profile</h1>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5>Full Name</h5>
+                                    </div>
+                                    <div class="col-md-9 text-secondary">
+                                        Jason
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5>Email Address</h5>
+                                    </div>
+                                    <div class="col-md-9 text-secondary">
+                                        Jason@gmail.com
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5>Phone</h5>
+                                    </div>
+                                    <div class="col-md-9 text secondary">
+                                       +9477562321
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5>Local Address</h5>
+                                    </div>
+                                    <div class="col-md-9 text-secondary">
+                                        Jayawardanapura kotte, Col-15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
