@@ -8,12 +8,11 @@ import java.io.*;
 
 /**
  *
- * @author Joshi
  */
 public class dbConnection {
     public static Connection conn;
-    public static Statement stmt1,stmt2,stmt3,stmt4;
-    public static ResultSet rslt1,rslt2,rslt3,rslt4;
+    public static Statement stmt1,stmt2,stmt3,stmt4,stmt5;
+    public static ResultSet rslt1,rslt2,rslt3,rslt4,rslt5;
 
 
 public static void DConnect() throws  ClassNotFoundException, SQLException {
@@ -27,6 +26,7 @@ stmt1 = conn.createStatement();
 stmt2 = conn.createStatement();
 stmt3 = conn.createStatement();
 stmt4 = conn.createStatement();
+stmt5 = conn.createStatement();
 
 }
 
