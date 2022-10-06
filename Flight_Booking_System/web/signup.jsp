@@ -11,7 +11,7 @@ try
 {
 ResultSet rs =null;
 Class.forName("com.mysql.jdbc.Driver");
-Connection con=    DriverManager.getConnection("jdbc:mysql://localhost:3306/flightdb?zeroDateTimeBehavior=convertToNull","root","");
+Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/flightdb?zeroDateTimeBehavior=convertToNull","root","");
 Statement stmt=con.createStatement();
 String fname=request.getParameter("fname");
 String lname=request.getParameter("lname");

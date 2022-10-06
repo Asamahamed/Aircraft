@@ -35,7 +35,7 @@ td {
  <%-- ------------------------------------------------------------------------------ --%> 
  
  
-<table class="table table-bordered table-striped table-condensed" align="bottem"  >
+<table class="table table-bordered table-striped table-condensed" align="center"  width="10%" >
             <tr>
              
                 <th>Staff_Id</th>
@@ -81,7 +81,7 @@ td {
             %>
        
         
-          
+
         
          <%-- ------------------------------------------------------------------------------ --%>
     
@@ -135,27 +135,27 @@ out.println(e.getMessage());
         
         <div class="menu-items">
             <ul class="nav-links">
-                <li><a href="#">
+                <li><a href="admin.jsp">
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Dahsboard</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="UserPage.html">
                     <i class="uil uil-files-landscapes"></i>
                     <span class="link-name">Monitor Pesenger</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="signup.html">
                     <i class="uil uil-chart"></i>
                     <span class="link-name">Add Staff</span>
                 </a></li>
                 
-                <li><a href="#">
+                <li><a href="www.google.com">
                     <i class="uil uil-share"></i>
                     <span class="link-name">Share</span>
                 </a></li>
             </ul>
             
             <ul class="logout-mode">
-                <li><a href="signup.html">
+                <li><a href="home.html">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
@@ -224,9 +224,9 @@ out.println(e.getMessage());
  <%-- ------------------------------------------------------------------------------ --%>
  
  
-
+ 
     
-    
+ <form method="POST">
     <table style="margin-top:1px; right:100px;" border="1" width="15" cellspacing="5">
         
         
@@ -252,24 +252,22 @@ out.println(e.getMessage());
             <tr>
                 
            <td>         
-             <select class="form-select" aria-label="Default select example">
+             <select class="form-select" aria-label="Default select example"name="grade">
   <option selected>S_Grade</option>
   <option value="sg1" >G1 Staff</option>
   <option value="sg2">G2 Staff</option>  </td>
 
-</select>
+
             </tr>
             <tr>
                 <td> <input type="submit" id="submit" value="Approved" name="submit" class="btn btn-info" >   </td>
-                    
-                  
-            </tbody>
-            
+              
             </tr>
              </table>
 
+ </form>
 
-           
+       
           
         
  <script src="js/admin.js">  
