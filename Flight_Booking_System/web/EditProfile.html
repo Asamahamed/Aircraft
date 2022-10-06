@@ -1,0 +1,108 @@
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Edit profile page</title>
+
+<style>
+
+body 
+{
+font-family: Arial, Helvetica, sans-serif;
+background-color:#F0FFFF;
+}
+
+form
+{
+ border: 6px solid #E5E4E2;
+ border-style:outset;
+ background-color:white;
+ border-radius:5%;
+ height:100%
+ width:70%;
+}
+
+input[type=text],input[type=date],input[type=number],input[type=password] 
+{
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  float:center;
+  background-color:#CCFFFF;
+}
+
+button {
+  background-color:#191970;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  text-decoration:none;
+}
+
+button:hover 
+{
+  opacity: 0.8;
+}
+
+.container
+{
+  padding: 16px;
+  text-align: center;
+}
+
+h2
+{
+  text-align:center;
+  color:black;
+  font-family: 'Dancing Script', cursive;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<h2>Edit profile</h2>
+	
+	<form action="" method="post">
+	
+	<div class="container">
+	
+    <label for="uname"><b>Full Name</b></label><br>
+    <input type="text" placeholder="Enter Fullname" name="uname"><br>
+	
+    <label for="dob"><b>Date of Birth</b></label><br>
+    <input type="date" placeholder="Enter DOB" name="dob"><br>
+	
+	<label for="telno"><b>Telephone no</b></label><br>
+    <input type="number" placeholder="Enter Telephone no" name="telno"><br>
+	
+    <label for="address"><b>Address</b></label><br>
+    <input type="text" placeholder="Enter Address" name="address"><br>
+	
+	<label for="pword"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter new Password" name="pword"><br>
+	
+    <label for="conpword"><b>Confirm Password</b></label><br>
+    <input type="password" placeholder="Re-enter password" name="conpword"><br>
+	
+	<button type="submit"><b>Make changes</b></button><br>
+	<button type="submit" ><b>Exit</b></button>
+	
+</div>
+	
+</form>
+	
+</body>
+	
+</html>
