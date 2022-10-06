@@ -227,7 +227,7 @@ out.println(e.getMessage());
  
     
  <form method="POST">
-    <table style="margin-top:1px; right:100px;" border="1" width="15" cellspacing="5">
+    <table style="margin-top:1px; right:100px;" border="1" width="10" cellspacing="5">
         
         
         <h3   style="margin-top:1px; right:100px;"><b>  Staff Account</b></h3>
