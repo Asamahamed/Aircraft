@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <title> Airlines </title>
+    <head> <img src="images\home logo.jpg"><h1 style="background-color:DodgerBlue;">PHOENIX AIRLINES BOOKING</h1>
+    <style>
+        
+        body{
+            background-color:lightsteelblue;
+            
+        }        
+            
+p:hover, h1:hover, a:hover {
+  background-color: lightblue;
+}
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: Black;
+  color: white;
+}
+   
+   
+    /* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+p.outset {border-style: outset;}
+    </style>
+     <link rel="stylesheet" href="index.css">
+    <!-- Link  CSS -->  
+    
+</head>
+
+
+<div class="topnav">
+  <a class="active" href="#home">HOME</a>
+  <a href="#about">About Us</a> 
+  <a href="#about">Contact Us</a>
+  <a href="#contact">LogIN</a>
+  <a href="#contact">SIGNIN</a>
+  <input type="text" placeholder="Search..">
+</div>
+<br>
+
+ <marquee width="100%" direction="left" height="100px"> <p style="color:Tomato;">
+*****   Important notice for passengers travelling to from srilanka | travel according to covid Guidelines. *****
+     </p></marquee>
+    <body>
+       
+    <div class="dropdown">
+  <button class="dropbtn">Plan & Book</button>
+  <div class="dropdown-content">
+    <a href="#">Book a Flight</a>
+    <a href="#">Manage My Booking</a>
+    <a href="#">Flight Schedules</a>
+  </div>
+</div>
+        
+       <div class="dropdown">
+  <button class="dropbtn">Payment Options</button>
+  <div class="dropdown-content">
+    <a href="#">Online & offline payment</a>
+    <a href="#">Book Now Pay Later</a>
+    <a href="#">Hold your booking at a fee</a>
+  </div>
+</div>
+        
+      <div class="dropdown">
+  <button class="dropbtn">Cancellations</button>
+  <div class="dropdown-content">
+    <a href="#">Within 24 hour cancellation</a>
+    <a href="#">Cancellation & refunds</a>
+  </div>
+</div>  
+       
+        <br><br>
+        
+    <center> 
+        <img src="C:\Users\Dilax G\Desktop\New folder(2)\02.jpg" alt="air craft" width="500" height="600">
+    </center>
+    <br><br>
+    
+    <center>
+    <form action="/action_page.php">
+ <fieldset>
+  <legend>Airlines:</legend>
+  <label for="fname">From:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="lname">To:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday">Depature:</label>
+  <input type="date" id="day" name="day"><br><br>
+  <label for="birthday">Return:</label>
+  <input type="date" id="day" name="day"><br><br>
+   <label for="Flexible Dates"> Flexible Dates </label>
+   <input type="checkbox" id="Flexible Dates" name="Flexible Dates" value="Boat"><br><br>
+  <input type="submit" value="Search">
+ </fieldset>
+    </form>
+    </center>  
+        
+    
+    <h2> Explore our fares </h2>
+<p>*Fares displayed have been collected within the last 48hrs and may no longer be available at time of booking. Additional fees and charges for optional products and services may apply.</p>
+<center>
+<form action="/action_page.php">
+    <label for="travel">From:</label> <br>
+  <select name="From" id="From">
+      <input type="text" placeholder="Input Origin">
+  </select>
+  <br><br>
+  
+   <label for="travel">To:</label> <br>
+  <select name="To" id="To">
+      <input type="text" placeholder="Enter Destination">
+  </select>
+   <br><br>
+   <label for="travel">Budget:</label> <br>
+   <select name="Budget" id="Budget">
+   <input type="text" placeholder="Input max bud">
+   </select>
+   <br><br>
+  <input type="submit" value="Search">
+ 
+</form>
+</center>
+<p class="outset"><center><a href=covid.html">check covid-19 entry requirements</a></center></p>
+    
+        
+        
+        
+<img src="images\flight1.jpg" >
+<center><img src="C:\Users\Dilax G\Desktop\istockphoto-1137971264-612x612.jpg"></center>
+<img src="images\T1.jpg" >   
+<img src="images\T2.jpg" >       
+        
+        
+        
+        
+        
+        
+    <br>     
+</center>      
+<footer>
+       ABOUT US<br>
+  <ul>
+      <li>About Airlines</li>
+      <li>Right to Information Act</li>
+      <li>Srilanka Tourism</li>
+      <li>Media Center</li>
+      <li>Careers</li>
+  </ul>
+    
+    TERMS AND CONDITIONS<br>
+  <ul>
+      <li>Online Booking Terms of Use</li>
+      <li>Conditions of Carriage</li>
+      <li>Notices for Travel Agents</li>
+      <li>Permission Center</li>
+      <li>Service Fees at ticket Office</li>
+  </ul>
+    <br>
+    <br>
+    <p> SUBSCRIBE TO OUR SPECIAL OFFERS </p>
+    <br>
+    <form action="/action_page.php">
+  <label for="email">Enetr email address:</label>
+  <input type="text" id="email" name="email"><br><br>
+  <label for="city">Select departure city:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <input type="submit" value="Subscribe">
+</form>
+    <br><br>
+    
+    <h2> Feel Free To ContactUs</h2>   
+    
+    
+    
+    
+    
+</footer>     
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>
