@@ -1,56 +1,24 @@
-<html>
-    <head>
-    </head>
-    <body>
-        
-  
+<form action="action_page.php">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
 
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
-   <form action="reservation.php" method="post">
-  <div class="elem-group">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
   </div>
-  <div class="elem-group">
-    <label for="email">Your E-mail</label>
-    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
-  <div class="elem-group">
-    <label for="phone">Your Phone</label>
-    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-  </div>
-  <hr>
-  <div class="elem-group inlined">
-    <label for="adult">Adults</label>
-    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
-  </div>
-  <div class="elem-group inlined">
-    <label for="child">Children</label>
-    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
-  </div>
-  <div class="elem-group inlined">
-    <label for="checkin-date">Check-in Date</label>
-    <input type="date" id="checkin-date" name="checkin" required>
-  </div>
-  <div class="elem-group inlined">
-    <label for="checkout-date">Check-out Date</label>
-    <input type="date" id="checkout-date" name="checkout" required>
-  </div>
-  <div class="elem-group">
-    <label for="room-selection">Select Room Preference</label>
-    <select id="room-selection" name="room_preference" required>
-        <option value="">Choose a Room from the List</option>
-        <option value="connecting">Connecting</option>
-        <option value="adjoining">Adjoining</option>
-        <option value="adjacent">Adjacent</option>
-    </select>
-  </div>
-  <hr>
-  <div class="elem-group">
-    <label for="message">Anything Else?</label>
-    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
-  </div>
-  <button type="submit">Book The Rooms</button>
 </form>
-</body>
-</html>
