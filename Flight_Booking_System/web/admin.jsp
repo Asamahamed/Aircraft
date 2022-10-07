@@ -37,7 +37,7 @@ td {
  <%-- ------------------------------------------------------------------------------ --%> 
  
  
-<table class="table table-bordered table-striped table-condensed" align="center"  width="15%" >
+<table class="table table-bordered table-striped table-condensed" align="center"  width="13%" >
             <tr>
              
                 <th>Staff_Id</th>
