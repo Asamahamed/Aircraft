@@ -9,9 +9,11 @@
   <HEAD>
                <link rel="stylesheet"  href="css/admindesh.css"> 
      
+      
+      </div>
     </HEAD>
 
-    <body>
+    <body background="images/red.jpg">
 
  <div>
 <%--table style --%>
@@ -253,10 +255,10 @@ out.println(e.getMessage());
                 
            <td>         
              <select class="form-select" aria-label="Default select example"name="grade">
-  <option selected>S_Grade</option>
+  <option selected value="null" >S_Grade</option>
   <option value="sg1" >G1 Staff</option>
   <option value="sg2">G2 Staff</option>  </td>
-
+       
 
             </tr>
             <tr>
@@ -267,7 +269,6 @@ out.println(e.getMessage());
 
  </form>
 
-       
           
         
  <script src="js/admin.js">  
